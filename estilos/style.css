@@ -2,9 +2,54 @@
 
 /*
 Paleta de cores:
-#0a0908
-#22333b
-#22333b
-#a9927d
-#5e503f
+#140500
+#FDFEF9
+#F2D3AC
+#401801
+#733410
 */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #401801;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fdfef9;
+    overflow: hidden;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+}
+
+section#login>div#imagem{
+    display: block;
+    background: #401801 url(../img/restaurante.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+}
+
+section#login>div#formulario{
+    display: block;
+    padding: 10px
+}
