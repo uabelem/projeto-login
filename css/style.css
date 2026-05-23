@@ -24,21 +24,20 @@ html,body{
 }
 
 main{
-    position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #fdfef91a;
     backdrop-filter: blur(10px);
     overflow: hidden;
     width: 290px;
-    height: 515px;
+    height: 503px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
     transition: width .6s, height .3s;
@@ -136,4 +135,22 @@ form>a:hover{
 
 form>a.btn>span{
     font-size: .9em;
+}
+
+section#scadastro{
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    transition: 1s ease-in-out;
+}
+
+a#cadastro{
+    color: #fdfef9;
+    font-size: .9em;
+    margin: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #ffa875;
+}
+a#cadastro:hover{
+    opacity: 70%;
 }
