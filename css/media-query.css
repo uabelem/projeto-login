@@ -10,23 +10,17 @@ Tela Grande: Acima de 1200px
 */
 
 @media screen and (min-width: 400px) and (max-width: 768px){
-    body{
-        background-image: linear-gradient(to top, #401801, #733410);
-    }
+
     section#login{
         width: 80vw;
-    }
-    section#login>div#imagem{
-        background-position: top center;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-    body{
-        background-image: linear-gradient(to top, #401801, #733410);
-    }
+
     section#login{
         width: 80vw;
+        height: 300px;
     }
 
     section#login>div#imagem{
@@ -42,12 +36,9 @@ Tela Grande: Acima de 1200px
 }
 
 @media screen and (min-width: 992px) {
-    body{
-        background-image: linear-gradient(to top, #401801, #733410);
-    }
-    
     section#login{
-        width: 950px
+        width: 950px;
+        height: 340px;
     }
 
     section#login>div#imagem{
@@ -66,6 +57,7 @@ Tela Grande: Acima de 1200px
 }
 
 div#formulario>p{
-    font-size: 1.2em;
+    font-size: 1.08em;
+    margin: 10px 0;
 }
 }

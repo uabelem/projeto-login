@@ -17,7 +17,8 @@ Paleta de cores:
 }
 
 html,body{
-    background-color: #733410;
+    background: linear-gradient(to top, #401801, transparent),url(../img/coffe-shop.jpg);
+    background-size: cover;
     height: 100vh;
     width: 100vw;
 }
@@ -33,21 +34,22 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fdfef9;
+    background-color: #fdfef91a;
+    backdrop-filter: blur(10px);
     overflow: hidden;
     width: 290px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
     transition: width .6s, height .3s;
     transition-timing-function: ease;
 }
 
 section#login>div#imagem{
     display: block;
-    background: #401801 url(../img/restaurante.jpg) no-repeat;
+    background: #401801 url(../img/coffe.jpg) no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     height: 200px;
 }
 
@@ -56,12 +58,82 @@ section#login>div#formulario{
     padding: 10px
 }
 
+form>div.campo{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffa875;
+    margin: 5px 0px;
+}
+
+div.campo>span{
+    color: #401801;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo>input{
+    background-color: #fdfef9;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0;
+    padding: 4px;
+    transform: translateY(-10px);
+    border-radius: 0 8px 8px 0;
+}
+
+div.campo>label{
+    display: none;
+}
+
 div#formulario>h1{
-    color: #140500;
+    color: #fdfef9;
     text-align: center;
     margin-bottom: 10px;
 }
 
 div#formulario>p{
     font-size: 0.8em;
+    color: #fdfef9;
+}
+
+form>input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#b8622f ;
+    color: #fdfef9;
+    border: none;
+    border-radius: 8px;
+}
+
+form>input[type=submit]:hover{
+    background-color: #924d26 ;
+    cursor: pointer;
+}
+form>a.btn{
+    font-family: 1em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #733410;
+    color: #fdfef9;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-top: 7px;
+}
+
+form>a:hover{
+    background-color:#401801;
+    cursor: pointer;
+}
+
+form>a.btn>span{
+    font-size: .9em;
 }
