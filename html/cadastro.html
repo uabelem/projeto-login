@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/media-cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="formulario">
+                <h1>Bem-vindo!</h1>
+                <p>Aqui seu café favorito sempre te espera. Seus pedidos, preferências e novidades estão todos aqui.</p>
+                <form onsubmit="validar(event)" action="cadastro.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-rounded" for="email1">person</span>
+                        <input type="email" name="login" id="email1" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-rounded" for="email2">how_to_reg</span>
+                        <input type="email" name="login" id="email2" placeholder="Confirme seu e-mail" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <span id="lock1" class="material-symbols-rounded" for="senha1">lock</span>
+                        <input type="password" name="senha" id="senha1" placeholder="Crie sua senha" autocomplete="current-password" required minlength="8">
+                        <button type="button" id="key1" class="material-symbols-rounded" onclick="verSenha1()">vpn_key</button>
+                    </div>
+                    <div class="campo">
+                        <span id="lock2" class="material-symbols-rounded" for="senha2">lock</span>
+                        <input type="password" name="senha" id="senha2" placeholder="Confirme sua senha" autocomplete="current-password" required minlength="8">
+                        <button type="button" id="key2" class="material-symbols-rounded" onclick="verSenha2()">vpn_key</button>
+                    </div>
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </section>
+        <section id="slogin">
+            <a id="elogin" href="../index.html">Já tenho uma conta</a>
+        </section>
+    </main>
+    <script src="../js/cadastro.js" defer></script>
+</body>
+</html>

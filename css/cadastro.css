@@ -37,7 +37,7 @@ section#login{
     backdrop-filter: blur(10px);
     overflow: hidden;
     width: 290px;
-    height: 503px;
+    height: fit-content;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
     transition: width .6s, height .3s;
@@ -88,6 +88,11 @@ div.campo>input:focus{
     outline: none;
 }
 
+input::placeholder {
+    color: inherit;
+    opacity: 50%;
+}
+
 div#formulario>h1{
     color: #fdfef9;
     text-align: center;
@@ -134,28 +139,28 @@ form>a:hover{
 }
 
 form>a.btn>span{
-    font-size: 1em;
+    font-size: .9em;
 }
 
-section#scadastro{
+section#slogin{
     display: flex;
     justify-content: center;
     width: 290px;
     transition: 1s ease-in-out;
 }
 
-a#cadastro{
+a#elogin{
     color: #fdfef9;
     font-size: .9em;
     margin: 5px;
     text-decoration: none;
     border-bottom: 1px solid #ffa875;
 }
-a#cadastro:hover{
+a#elogin:hover{
     opacity: 70%;
 }
 
-button#eye{
+button#key2,button#key1{
     opacity: 30%;
     color: #401801;
     background-color: white;
