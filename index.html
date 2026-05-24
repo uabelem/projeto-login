@@ -21,12 +21,11 @@
                     <div class="campo">
                         <span class="material-symbols-rounded" for="ilogin">person</span>
                         <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="30">
-                        <label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-rounded" for="isenha">vpn_key</span>
+                        <span id="lock" class="material-symbols-rounded" for="isenha">lock</span>
                         <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8">
-                        <label for="isenha">Senha</label>
+                        <button type="button" id="eye" class="material-symbols-rounded" onclick="verSenha()">vpn_key</button>
                     </div>
                     <input type="submit" value="Entrar">
                     <a href="esqueci.html" class="btn">Esqueci minha senha
@@ -39,5 +38,6 @@
             <a id="cadastro" href="#">Não tenho uma conta</a>
         </section>
     </main>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
